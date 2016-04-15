@@ -63,7 +63,7 @@ is_target() {
     return true
   }
   ; for disable 
-  if (WinActive("ahk_class Chrome_WidgetWin_1") || WinActive("ahk_class Console_2_Main") || WinActive("ahk_class PuTTY") || WinActive("ahk_class SunAwtFrame")) { 
+  if (WinActive("ahk_class Console_2_Main") || WinActive("ahk_class PuTTY") || WinActive("ahk_class SunAwtFrame")) { 
     return false
   }
   return true
