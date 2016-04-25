@@ -353,12 +353,6 @@ h::
   Else
     Send %A_ThisHotkey%
   Return
-^r::
-  If IsInEmacsMode()
-    isearch_backward()
-  Else
-    Send %A_ThisHotkey%
-  Return
 ^y::
   If IsInEmacsMode()
     yank()
