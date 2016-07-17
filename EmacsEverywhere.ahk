@@ -1,4 +1,4 @@
-﻿;
+;
 ; AutoHotkey Version: 1.x
 ; Language:         English
 ; Platform:         WinNT
@@ -364,19 +364,6 @@ h::
     undo()
   Else
     Send %A_ThisHotkey%
-  Return
- 
-;$^{Space}::
-^vk20sc039::
-  If IsInEmacsMode()
-  {
-    If is_pre_spc
-      is_pre_spc = 0
-    Else
-      is_pre_spc = 1
-  }
-  Else
-    Send {CtrlDown}{Space}{CtrlUp}
   Return
 ^@::
   If IsInEmacsMode()
